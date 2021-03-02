@@ -1,0 +1,10 @@
+(rule
+ (alias chain)
+ (deps
+  (alias 1_variables/a_fi)
+  (alias 1_variables/b_fa)
+  (alias 1_variables/c_foo)
+  (alias 2_functions/a_bla)
+  (alias 2_functions/b_blu))
+ (action
+  (run true)))

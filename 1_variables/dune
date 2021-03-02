@@ -1,0 +1,23 @@
+(executables
+ (names a_fi b_fa c_foo))
+
+(rule
+ (alias a_fi)
+ (action
+  (run ./a_fi.exe))
+ (enabled_if
+  (= true %{env:VARIABLES=true})))
+
+(rule
+ (alias b_fa)
+ (action
+  (run ./b_fa.exe))
+ (enabled_if
+  (= true %{env:VARIABLES=true})))
+
+(rule
+ (alias c_foo)
+ (action
+  (run ./c_foo.exe))
+ (enabled_if
+  (= true %{env:VARIABLES=true})))

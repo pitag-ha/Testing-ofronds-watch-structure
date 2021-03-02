@@ -1,0 +1,16 @@
+(executables
+ (names a_bla b_blu))
+
+(rule
+ (alias a_bla)
+ (action
+  (run ./a_bla.exe))
+ (enabled_if
+  (= true %{env:FUNCTIONS=true})))
+
+(rule
+ (alias b_blu)
+ (action
+  (run ./b_blu.exe))
+ (enabled_if
+  (= true %{env:FUNCTIONS=true})))
